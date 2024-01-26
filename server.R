@@ -36,7 +36,7 @@ server <- function(input, output, session) {
     })
   
   
-  
+  #Creations des values Box
   output$numStreams <- renderValueBox({
     valueBox(value = num_streams(), color = "lime",
              subtitle = "Number of streams",
@@ -65,7 +65,7 @@ server <- function(input, output, session) {
     
   })
   
-  
+  #Table interactive
   output$datatable_track <- renderDT({
     data <- filtered_data() %>% 
       select(artist_name,track_name,streams,in_spotify_playlists,
@@ -83,6 +83,7 @@ server <- function(input, output, session) {
     
   })
   
+  #Creation des graphs
   output$tracksPerYearArtistPlot <- renderPlotly({
     
     data <- filtered_data() %>%
@@ -94,11 +95,10 @@ server <- function(input, output, session) {
       labs(title = "Number of Tracks per Year",
            x = "Year",
            y = "Number of tracks") +
-      theme_minimal()
+      theme_light()
     
   })
   
-  # Render the interactive plotly plot
   output$genrePopularityPlot <- renderPlotly({
     
     data <- filtered_data() %>%
@@ -111,7 +111,7 @@ server <- function(input, output, session) {
       labs(title = "Popularity of genre",
            x = "Genre",
            y = "Count") +
-      theme_classic()
+      theme_minimal()
     
   })
   
