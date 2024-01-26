@@ -1,6 +1,11 @@
 # 🎵 Spotify Artist Dashboard
 This Shiny Dashboard provides a summarized analysis of Spotify data for a selected artist. The dashboard includes insights on key performance indicators (KPIs), interactive graphs, and a detailed table.
 
+em(View of application)
+
+<img width="947" alt="dams" src="https://github.com/DamienL31/ProjetR/assets/152622955/875a5322-a91b-4a0f-a447-e62de3074aca">
+
+
 ## 📌 Important Information
 This dashboard presents summarized data for one artist. Only artists with at least 5 songs are included in the analysis. You can customize the dashboard theme in the theme tab.
 ### Please select one artist and discover insights and KPIs over the tabs.
