@@ -1,51 +1,46 @@
-# Web App Rshiny 
-## Los Angeles Crimes Application 
+### 🎵 Spotify Artist Dashboard
+This Shiny Dashboard provides a summarized analysis of Spotify data for a selected artist. The dashboard includes insights on key performance indicators (KPIs), interactive graphs, and a detailed table.
 
-*Welcome to the Los Angeles Crimes app, a comprehensive tool for exploring crime data in the city of Los Angeles. This Shiny web application provides visualizations and analyses by LA districts to help users understand crime trends and variations over time and across districts.*
+### 📌 Important Information
+This dashboard presents summarized data for one artist. Only artists with at least 5 songs are included in the analysis. You can customize the dashboard theme in the theme tab.
 
-## Getting Started
+# Please select one artist and discover insights and KPIs over the tabs.
 
-### Prerequisites
+## 🚀 Usage
+Home Tab
+Select the artist of interest from the dropdown menu.
+Engage in a chat with chatGPT to explore additional insights.
+KPI's Tab
+View key performance indicators (KPIs) for the selected artist.
+Metrics include the number of streams, tracks, artists, and genres.
+Graphic Tab
+Explore interactive plots depicting the number of tracks per year and genre popularity.
+Customize the theme in the "Thèmes" tab.
+Summary Tab
+Access a detailed table summarizing artist tracks.
+Sort, filter, and search to explore specific data.
+Thèmes Tab
+Adjust the dashboard theme to your preference using the theme selector.
 
-- R (version 3.6.0 or higher)
-- RStudio
-- Shiny and R packages
+## 🛠️ How to Run
+Ensure you have R and Shiny installed on your machine.
+Clone the repository.
+Run the Shiny app by executing the following commands in R:
+R
+Copy code
+library(shiny)
+runApp("path/to/your/app")
+Make sure to replace "path/to/your/app" with the actual path to the app folder.
 
-### Installation
+## 📦 Dependencies
+Shiny
+ggplot2
+plotly
+shinydashboard
+DT
+viridis
 
-1. Clone the repo:
-   ```sh
-   git clone https://github.com/universdesdonnees/PredictCovid.git
-   ```
-2. Open the project in RStudio and Packages.R : 
-check that you have the same packages as in packages.R if not below the command :  
-install.packages('package')
-then don't forget to load it
-library(package)
-
-## Usage
-
-Run the application locally by opening the `crim_appli.R` file in RStudio and clicking 'Run App'. 
-
-## Application Structure
-
-- `crim_appli.R`: Defines the user and server interface.
-- `global.R`: Contains the variables 
-- `Packages.R`: Includes all packages for build an application.
-
-## Instructions 
-
-Navigate through the tabs to access different analyses.
-Utilize dropdowns and buttons to customize your data exploration experience.
-Note: Please ensure your date range selection falls between 2020-01-01 and 2023-10-30 for accurate statistics.
-
-Explore, analyze, and gain valuable insights into the crime landscape of Los Angeles with the Los Angeles Crimes Application!
-
-
-
-
-## Contact
- 
+## 🌟 Contact
 - [LinkedIn](https://www.linkedin.com/in/damienlauger/) 
 - [Email](damien.lauger.edu@groupe-gema.com)
 
